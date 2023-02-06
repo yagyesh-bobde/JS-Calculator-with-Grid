@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- js -->
+    <script src="script.js" defer ></script>
+</head>
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <div id="prev_input" class="prev_input">
+                123*
+            </div>
+            <div id="current_input" class="current_input">
+                2
+            </div>
+        </div>
+        <button class="span-two" onclick="clearScreen()" >AC</button>
+        <button onclick="deleteOne()">DEL</button>
+        <button class="operands">%</button>
+        <button onclick="display('1')" >1</button>
+        <button onclick="display('2')" >2</button>
+        <button onclick="display('3')" >3</button>
+        <button onclick="display('+')"  class="operands">+</button>
+        <button onclick="display('4')" >4</button>
+        <button onclick="display('5')" >5</button>
+        <button onclick="display('6')" >6</button>
+        <button onclick="display('-')"  class="operands">-</button>
+        <button onclick="display('7')" >7</button>
+        <button onclick="display('8')" >8</button>
+        <button onclick="display('9')" >9</button>
+        <button onclick="display('*')"  class="operands">*</button>
+        <button onclick="display('.')" >.</button>
+        <button onclick="display('0')" >0</button>
+        <button onclick="calculate('')"  class="span-two calc " >=</button>
+    </div>
+</body>
+</html>
